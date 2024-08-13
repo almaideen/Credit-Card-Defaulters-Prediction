@@ -1,21 +1,27 @@
 import os
 import sys
 import stats
+import xgboost
+import numpy as np
+import pandas as pd
+from scipy.stats import randint
 from dataclasses import dataclass
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import AdaBoostClassifier, GradientBoostingClassifier
-from xgboost import XgboostClassifier
+from xgboost import XGBClassifier
+from sklearn.metrics import accuracy_score
 
 from exception import CustomException
 from logger import logging
 from utils import save_object, evaluate_models
+from datetime import datetime
 
 @dataclass
 class ModelTrainerConfig:
-    trained_model_file_path=os.path.join("artifacts","model.pkl")
+    trained_model_file_path=os.path.join("artifacts","model")
 
 class ModelTrainer:
     def __init__(self):
@@ -30,10 +36,10 @@ class ModelTrainer:
                 'Random Forest':RandomForestClassifier(),
                 'Ada Boost':AdaBoostClassifier(),
                 'Gradient Boosting':GradientBoostingClassifier(),
-                'XGBoost': XgboostClassifier()
+                'XGBoost': XGBClassifier()
 
             }
-            params={
+            params={'''
                 'Logistic Regression':{
                     'penalty':['l1', 'l2', 'elasticnet', None],
                     'solver':['lbfgs', 'liblinear', 'newton-cg', 'newton-cholesky', 'sag', 'saga']
@@ -70,30 +76,18 @@ class ModelTrainer:
                     'criterion':['friedman_mse', 'squared_error']
                 },
                 'XGBoost':{
-                    'max_depth': stats.randint(3, 10),
-                    'learning_rate': stats.uniform(0.01, 0.1),
-                    'subsample': stats.uniform(0.5, 0.5),
-                    'n_estimators':stats.randint(50, 200)
-                }
+                    'max_depth': np.random.randint(3, 10),
+                    'learning_rate': np.random.uniform(0.01, 0.1),
+                    'subsample': np.random.uniform(0.5, 0.5),
+                    'n_estimators':np.random.randint(50, 200)
+                }'''
             }
-
-            model_report:dict=evaluate_models(X_train=X_train,y_train=y_train,X_test=X_test,y_test=y_test,models=models,param=params)
-            best_model_score= max(sorted(model_report.values()))
-            best_model_name = list(model_report.keys())[
-                list(model_report.values()).index(best_model_score)]
+            logging.info("Model Training Started!")
+            model_scores:dict=evaluate_models(X_train=X_train,y_train=y_train,X_test=X_test,y_test=y_test,models=models)
+            model_report = pd.DataFrame(data=model_scores.values(),columns=['Training_Score','Test_Score'],index=model_scores.keys())
+            best_model_name = model_report.sort_values(['Test_Score'],ascending=False).index[0]
             best_model = models[best_model_name]
-
-            if best_model_score<0.6:
-                raise CustomException("No best model found!")
-            logging.info("Best model found!")
-
-            save_object(
-                file_path=self.model_trainer_config.trained_model_file_path,
-                obj=best_model
-            )
-            predicted = best_model.predict(X_test)
-            rsquare = r2_score(y_test,predicted)
-            print(best_model,rsquare)
-        
+            return model_report, best_model_name, best_model
+               
         except Exception as e:
             raise CustomException(e,sys)

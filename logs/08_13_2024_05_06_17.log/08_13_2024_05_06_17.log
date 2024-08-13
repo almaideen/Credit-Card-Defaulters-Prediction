@@ -1,0 +1,19 @@
+[ 2024-08-13 05:06:21,805] 9 INFO Data Ingested Successfully!
+[ 2024-08-13 05:06:22,527] 28 INFO KMeans(n_clusters=10, random_state=5) pickle file created!
+[ 2024-08-13 05:06:22,528] 53 INFO KMeans file is saved!
+[ 2024-08-13 05:06:22,529] 55 INFO Number of clusters found: 3
+[ 2024-08-13 05:06:22,585] 17 INFO Created Train and Test data
+[ 2024-08-13 05:06:22,595] 28 INFO StandardScaler() pickle file created!
+[ 2024-08-13 05:06:22,595] 42 INFO Scaler file is saved!
+[ 2024-08-13 05:06:22,595] 84 INFO Model Training Started!
+[ 2024-08-13 05:06:55,584] 28 INFO {'Logistic Regression': (0.7788628130414238, 0.7794928335170893), 'SVC': (0.8002047566545912, 0.7883131201764058), 'Decision Tree': (0.9994487320837927, 0.6929437706725469), 'Random Forest': (0.9994487320837927, 0.7897831679529584), 'Ada Boost': (0.7870530792250748, 0.7875780962881294), 'Gradient Boosting': (0.8011497873680895, 0.7947445791988239), 'XGBoost': (0.9151047409040793, 0.7800441014332966)} pickle file created!
+[ 2024-08-13 05:06:55,601] 17 INFO Created Train and Test data
+[ 2024-08-13 05:06:55,611] 28 INFO StandardScaler() pickle file created!
+[ 2024-08-13 05:06:55,612] 42 INFO Scaler file is saved!
+[ 2024-08-13 05:06:55,612] 84 INFO Model Training Started!
+[ 2024-08-13 05:06:59,414] 28 INFO {'Logistic Regression': (0.850452577725305, 0.852157943067034), 'SVC': (0.8693427784336876, 0.8558310376492194), 'Decision Tree': (1.0, 0.7630853994490359), 'Random Forest': (1.0, 0.8585858585858586), 'Ada Boost': (0.850452577725305, 0.8530762167125804), 'Gradient Boosting': (0.8945297127115309, 0.8585858585858586), 'XGBoost': (1.0, 0.8402203856749312)} pickle file created!
+[ 2024-08-13 05:06:59,420] 17 INFO Created Train and Test data
+[ 2024-08-13 05:06:59,429] 28 INFO StandardScaler() pickle file created!
+[ 2024-08-13 05:06:59,429] 42 INFO Scaler file is saved!
+[ 2024-08-13 05:06:59,431] 84 INFO Model Training Started!
+[ 2024-08-13 05:07:09,138] 28 INFO {'Logistic Regression': (0.8571428571428571, 0.875658161198866), 'SVC': (0.8637389342128102, 0.8768732280275415), 'Decision Tree': (0.9987849331713244, 0.7800729040097205), 'Random Forest': (0.9986113521957993, 0.8780882948562171), 'Ada Boost': (0.8628710293351849, 0.880113406237343), 'Gradient Boosting': (0.8727651449401146, 0.8793033616848926), 'XGBoost': (0.970491234160736, 0.8712029161603888)} pickle file created!

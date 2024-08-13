@@ -1,0 +1,19 @@
+[ 2024-08-13 07:11:01,009] 9 INFO Data Ingested Successfully!
+[ 2024-08-13 07:11:01,587] 29 INFO KMeans(n_clusters=10, random_state=5) pickle file created!
+[ 2024-08-13 07:11:01,587] 54 INFO KMeans file is saved!
+[ 2024-08-13 07:11:01,588] 56 INFO Number of clusters found: 3
+[ 2024-08-13 07:11:01,633] 18 INFO Created Train and Test data
+[ 2024-08-13 07:11:01,643] 29 INFO StandardScaler() pickle file created!
+[ 2024-08-13 07:11:01,643] 43 INFO Scaler file is saved!
+[ 2024-08-13 07:11:01,643] 85 INFO Model Training Started!
+[ 2024-08-13 07:11:26,485] 29 INFO GradientBoostingClassifier() pickle file created!
+[ 2024-08-13 07:11:26,505] 18 INFO Created Train and Test data
+[ 2024-08-13 07:11:26,511] 29 INFO StandardScaler() pickle file created!
+[ 2024-08-13 07:11:26,512] 43 INFO Scaler file is saved!
+[ 2024-08-13 07:11:26,512] 85 INFO Model Training Started!
+[ 2024-08-13 07:11:29,237] 29 INFO RandomForestClassifier() pickle file created!
+[ 2024-08-13 07:11:29,252] 18 INFO Created Train and Test data
+[ 2024-08-13 07:11:29,261] 29 INFO StandardScaler() pickle file created!
+[ 2024-08-13 07:11:29,261] 43 INFO Scaler file is saved!
+[ 2024-08-13 07:11:29,261] 85 INFO Model Training Started!
+[ 2024-08-13 07:11:36,094] 29 INFO AdaBoostClassifier() pickle file created!

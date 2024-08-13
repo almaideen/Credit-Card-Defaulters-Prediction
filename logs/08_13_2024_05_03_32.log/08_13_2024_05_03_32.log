@@ -1,0 +1,8 @@
+[ 2024-08-13 05:03:37,119] 9 INFO Data Ingested Successfully!
+[ 2024-08-13 05:03:37,939] 28 INFO KMeans(n_clusters=10, random_state=5) pickle file created!
+[ 2024-08-13 05:03:37,940] 53 INFO KMeans file is saved!
+[ 2024-08-13 05:03:37,940] 55 INFO Number of clusters found: 3
+[ 2024-08-13 05:03:37,998] 17 INFO Created Train and Test data
+[ 2024-08-13 05:03:38,009] 28 INFO StandardScaler() pickle file created!
+[ 2024-08-13 05:03:38,010] 42 INFO Scaler file is saved!
+[ 2024-08-13 05:03:38,010] 84 INFO Model Training Started!

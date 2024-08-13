@@ -1,0 +1,67 @@
+[ 2024-08-13 06:24:54,386] 9 INFO Data Ingested Successfully!
+[ 2024-08-13 06:24:55,112] 28 INFO KMeans(n_clusters=10, random_state=5) pickle file created!
+[ 2024-08-13 06:24:55,112] 53 INFO KMeans file is saved!
+[ 2024-08-13 06:24:55,113] 55 INFO Number of clusters found: 3
+[ 2024-08-13 06:24:55,165] 17 INFO Created Train and Test data
+[ 2024-08-13 06:24:55,183] 28 INFO StandardScaler() pickle file created!
+[ 2024-08-13 06:24:55,183] 42 INFO Scaler file is saved!
+[ 2024-08-13 06:24:55,184] 85 INFO Model Training Started!
+[ 2024-08-13 06:24:55,228] 28 INFO LogisticRegression() pickle file created!
+[ 2024-08-13 06:25:15,888] 28 INFO SVC() pickle file created!
+[ 2024-08-13 06:25:16,201] 28 INFO DecisionTreeClassifier() pickle file created!
+[ 2024-08-13 06:25:20,827] 28 INFO RandomForestClassifier() pickle file created!
+[ 2024-08-13 06:25:22,418] 28 INFO AdaBoostClassifier() pickle file created!
+[ 2024-08-13 06:25:28,740] 28 INFO GradientBoostingClassifier() pickle file created!
+[ 2024-08-13 06:25:30,108] 28 INFO XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=None,
+              num_parallel_tree=None, random_state=None, ...) pickle file created!
+[ 2024-08-13 06:25:30,136] 17 INFO Created Train and Test data
+[ 2024-08-13 06:25:30,144] 28 INFO StandardScaler() pickle file created!
+[ 2024-08-13 06:25:30,144] 42 INFO Scaler file is saved!
+[ 2024-08-13 06:25:30,145] 85 INFO Model Training Started!
+[ 2024-08-13 06:25:30,162] 28 INFO LogisticRegression() pickle file created!
+[ 2024-08-13 06:25:30,906] 28 INFO SVC() pickle file created!
+[ 2024-08-13 06:25:30,966] 28 INFO DecisionTreeClassifier() pickle file created!
+[ 2024-08-13 06:25:31,950] 28 INFO RandomForestClassifier() pickle file created!
+[ 2024-08-13 06:25:32,373] 28 INFO AdaBoostClassifier() pickle file created!
+[ 2024-08-13 06:25:33,885] 28 INFO GradientBoostingClassifier() pickle file created!
+[ 2024-08-13 06:25:34,023] 28 INFO XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=None,
+              num_parallel_tree=None, random_state=None, ...) pickle file created!
+[ 2024-08-13 06:25:34,048] 17 INFO Created Train and Test data
+[ 2024-08-13 06:25:34,059] 28 INFO StandardScaler() pickle file created!
+[ 2024-08-13 06:25:34,060] 42 INFO Scaler file is saved!
+[ 2024-08-13 06:25:34,060] 85 INFO Model Training Started!
+[ 2024-08-13 06:25:34,089] 28 INFO LogisticRegression() pickle file created!
+[ 2024-08-13 06:25:37,319] 28 INFO SVC() pickle file created!
+[ 2024-08-13 06:25:37,472] 28 INFO DecisionTreeClassifier() pickle file created!
+[ 2024-08-13 06:25:39,380] 28 INFO RandomForestClassifier() pickle file created!
+[ 2024-08-13 06:25:40,075] 28 INFO AdaBoostClassifier() pickle file created!
+[ 2024-08-13 06:25:42,810] 28 INFO GradientBoostingClassifier() pickle file created!
+[ 2024-08-13 06:25:42,989] 28 INFO XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=None,
+              num_parallel_tree=None, random_state=None, ...) pickle file created!

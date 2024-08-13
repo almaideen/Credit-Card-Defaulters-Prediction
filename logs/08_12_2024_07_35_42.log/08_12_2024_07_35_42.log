@@ -1,1 +1,0 @@
-[ 2024-08-12 07:35:42,292] 10 INFO Missing optional dependency 'xlrd'. Install xlrd >= 2.0.1 for xls Excel support Use pip or conda to install xlrd.

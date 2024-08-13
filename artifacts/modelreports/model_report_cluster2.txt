@@ -1,0 +1,8 @@
+                     Training_Score  Test_Score
+Logistic Regression        0.857143    0.875658
+SVC                        0.863739    0.876873
+Decision Tree              0.998785    0.786958
+Random Forest              0.998785    0.880923
+Ada Boost                  0.862871    0.880113
+Gradient Boosting          0.872765    0.878898
+XGBoost                    0.970491    0.871203
