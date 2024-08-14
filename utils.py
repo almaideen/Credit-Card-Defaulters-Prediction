@@ -33,6 +33,16 @@ def save_object(file_path,obj):
         logging.info(f"Error occured while creating {obj} pickle file!")
         raise CustomException(e,sys)
 
+def load_object(file_path,file_name):
+    try:
+        path = os.path.join(file_path,file_name)
+        file=open(path,'rb')
+        loaded_object = pickle.load(file)
+        logging.info(f"{file_name} loaded successfully!")
+        return loaded_object
+    except Exception as e:
+        raise CustomException(e,sys)
+
 
 def scaler(X_train,X_test):
     stdscaler = StandardScaler()

@@ -1,0 +1,5 @@
+[ 2024-08-14 05:38:56,794] 41 INFO scaler.pkl loaded successfully!
+[ 2024-08-14 05:38:56,818] 41 INFO kmeans.pkl loaded successfully!
+[ 2024-08-14 05:38:57,051] 41 INFO Gradient Boosting_cluster0.pkl loaded successfully!
+[ 2024-08-14 05:38:57,074] 41 INFO Random Forest_cluster1.pkl loaded successfully!
+[ 2024-08-14 05:38:57,081] 41 INFO Ada Boost_cluster2.pkl loaded successfully!

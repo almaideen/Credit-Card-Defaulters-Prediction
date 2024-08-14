@@ -38,21 +38,3 @@ for i in range(0,number_of_clusters):
     
 
 
-
-'''
-#Scaling
-X_Scaled = scaler(X)
-data_updated=X_Scaled
-data_updated['cluster']=y_kmeans
-data_updated['label']=y
-
-#Updated X and y
-X=data_updated.drop(['label'],axis=1)
-y=data_updated['label']
-
-print(X.head())
-
-
-X_train,y_train,X_test,y_test=train_test_splitter(X,y)
-modeltrainer = ModelTrainer()
-print(modeltrainer.initiate_model_training(X_train_scaled,y_train,X_test_scaled,y_test))'''
